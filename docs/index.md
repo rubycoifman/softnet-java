@@ -16,6 +16,6 @@ This document guides you through the process of developing IoT applications usin
 
 Softnet is not only a set of communication protocols. It is also a complete solution for managing IoT projects, services, clients, users, permissions, and contacts. The platform supports shared access to devices with other persons/organizations, allowing owners to establish user-to-user or business-to-consumer relationships. Using Softnet, you can concentrate on the application’s logic without concerning about networking issues.  
 
-To have a complete understanding of Softnet, you may need to learn two more documents: [The Developer’s Guide to Softnet ASN.1 Codec (Java)](https://robert-koifman.github.io/asncodec-java){:target="_blank"}{:rel="noopener noreferrer"} and «The User’s Guide to Softnet Management System».  
+To have a complete understanding of Softnet, you may need to learn two more documents: [The Developer’s Guide to Softnet ASN.1 Codec (Java)](https://softnet-x.github.io/asncodec-java){:target="_blank"}{:rel="noopener noreferrer"} and «The User’s Guide to Softnet Management System».  
 
 Softnet (Java) is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
