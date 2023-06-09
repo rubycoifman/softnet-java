@@ -8,7 +8,7 @@ nav_order: 2
 
 ## 13.2. Implementing event handlers
 
-Here you follow the same approach as when implementing service event handlers. If the handler has a parameter of type <span class="datatype">ClientEndpointEvent</span>, the updated objects that caused the event to be raised can only be retrieved from the endpoint. To get the endpoint, call <span class="method">getEndpoint</span> on the handler’s parameter 'e'. The method has the following signature:
+Here you follow the same approach as when implementing service event handlers. If the handler has a parameter of type <span class="datatype">ClientEndpointEvent</span>, the updated object that caused an event to be raised can only be retrieved from the endpoint. To get the endpoint, call <span class="method">getEndpoint</span> on the handler’s parameter 'e'. The method has the following signature:
 ```java
 public ClientEndpoint getEndpoint()
 ```
