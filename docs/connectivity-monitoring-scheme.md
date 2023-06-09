@@ -16,6 +16,6 @@ Both the service and client endpoint classes have a method to set the ping perio
 public void setPingPeriod(int seconds)
 ```
 
-The value is expected in seconds. It must be between 10 seconds and 300 seconds. If you provide 0, the period will be set to the default value, which is 300 seconds. However, if the ping period is set through the management panel, it overrides the value set programmatically. For example, the image below shows the print screen of the site management panel, where the service has a ping period set to 15 seconds:  
+The value is expected in seconds. It must be between 10 seconds and 300 seconds. If you provide 0, the period will be set to the default value, which is 300 seconds. However, if the ping period is set through the management panel, it overrides the value set programmatically. For example, the image below shows a print screen of the site management panel, where the service has a ping period set to 15 seconds:  
 
 ![]({{ site.baseurl }}{% link assets/images/image_14.1.png %})

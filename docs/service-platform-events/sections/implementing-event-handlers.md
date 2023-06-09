@@ -12,8 +12,8 @@ Some handlers have a parameter 'e' of type <span class="datatype">ServiceEndpoin
 ```java
 public ServiceEndpoint getEndpoint()
 ```
-The method returns an endpoint, which is of type <span class="datatype">ServiceEndpoint</span>, that invoked the handler. In such case, your application gets the updated object, that caused an event to be raised, from the endpoint as the handler’s parameter e does not contain them.  
+The method returns an endpoint, which is of type <span class="datatype">ServiceEndpoint</span>, that invoked the handler. In such case, your application gets the updated object, that caused an event to be raised, from the endpoint as the handler’s parameter e does not contain it.  
 
-Some of the handlers associated with Users Membership have a parameter e of type <span class="datatype">MembershipUserEvent</span> derived from <span class="datatype">ServiceEndpointEvent</span>. Along with a derived method <span class="method">getEndpoint</span>, it has a field user of type <span class="datatype">MembershipUser</span>. This is a membership user that caused the event to be raised by the platform.  
+Some of the handlers associated with Users Membership have a parameter e of type <span class="datatype">MembershipUserEvent</span> derived from <span class="datatype">ServiceEndpointEvent</span>. Along with a derived method <span class="method">getEndpoint</span>, it has a field <span class="field">user</span> of type <span class="datatype">MembershipUser</span>. This is a membership user that caused the event to be raised by the platform.  
 
 Let's look at how to work with each of the event handlers declared by the <span class="datatype">ServiceEventListener</span> interface.
