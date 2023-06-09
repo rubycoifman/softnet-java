@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 18.9. Raising Replacing events
+title: 18.7. Raising Replacing events
 parent: 18. Application Events
-nav_order: 9
+nav_order: 7
 ---
 
-## 18.9. Raising Replacing events
+## 18.7. Raising Replacing events
 
 Replacing events are so called because each new event of this kind received by the broker replaces the old one in the queue, if any. Thus, the queue of Replacing event can contain only one the most recent instance. Those clients that haven’t yet received the previous event will no longer be able to receive it, but only the last one. An event can remain in the queue for an arbitrarily long time until it is replaced by a new event. Those familiar with MQTT may notice that Replacing events are similar to MQTT retained messages.  
 

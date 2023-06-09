@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 18.13. Raising Private events
+title: 18.11. Raising Private events
 parent: 18. Application Events
-nav_order: 13
+nav_order: 11
 ---
 
-## 18.13. Raising Private events
+## 18.11. Raising Private events
 
 At times, a service may not be able to immediately respond to a client request and may take an indefinite period of time to do so. Since the client request cannot last longer than a short timeout interval, the service can complete the request-response session by informing the client that it will be notified when the result is ready. And when the result is ready, the service can then send a Private event to the client, either notifying it that the result is ready or that the interaction can continue.  
 

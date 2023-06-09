@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 18.1. Basic properties
+title: 18.1. Basic features
 parent: 18. Application Events
 nav_order: 1
 ---
 
-## 18.1. Basic properties
+## 18.1. Basic features
 
 Softnet supports three categories of events – Replacing, Queueing, and Private. Events must be defined in the site structure, where, along with a category, you specify such parameters as the name, lifetime, max queue size, and access rule. This technique is described in [section 7.4]({{ site.baseurl }}{% link docs/site/sections/application-events.md %}). An event broker hosted on the site implements a queue for each event defined in the site structure. The queue of Replacing events can contain only one last event. Each new event replaces the old one. In contrast, each new Queueing event joins the queue of previously received instances. If the queue is full when a new event is received, the oldest one is removed from the tail to make room. The maximum size of a Queueing event queue is specified in the event definition. The queue of Private events works in a similar way. Its maximum size is fixed at 1000.  
 

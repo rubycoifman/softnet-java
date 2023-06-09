@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 18.11. Raising Queueing events
+title: 18.9. Raising Queueing events
 parent: 18. Application Events
-nav_order: 11
+nav_order: 9
 ---
 
-## 18.11. Raising Queueing events
+## 18.9. Raising Queueing events
 
 According to the name, each new Queueing event joins the queue of previously received instances. This continues until the queue is full. Then each new event pushes the oldest one out of the queue. The event is also removed from the queue at the end of the lifetime. Event parameters are defined in the site structure. These are the event name, lifetime, maximum queue size, and access rule. See [section 7.4]({{ site.baseurl }}{% link docs/site/sections/application-events.md %}) for details. Queuing events are used when clients need all raised events.  
 

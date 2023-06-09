@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 18.12. Handling Queueing events
+title: 18.10. Handling Queueing events
 parent: 18. Application Events
-nav_order: 12
+nav_order: 10
 ---
 
-## 18.12. Handling Queueing events
+## 18.10. Handling Queueing events
 
 Handling Queueing events is almost identical to handling Replacing events. In this description, most things are repeated, and the differences are noted.  
 

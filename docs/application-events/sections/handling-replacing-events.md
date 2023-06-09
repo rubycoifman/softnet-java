@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 18.10. Handling Replacing events
+title: 18.8. Handling Replacing events
 parent: 18. Application Events
-nav_order: 10
+nav_order: 8
 ---
 
-## 18.10. Handling Replacing events
+## 18.8. Handling Replacing events
 
 The client application subscribes to a Replacing event by calling the following method of the <span class="datatype">ClientEndpoint</span> class:
 ```java

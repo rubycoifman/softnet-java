@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 18.7. Setting up the service persistence
+title: 18.5. Setting up the service persistence
 parent: 18. Application Events
-nav_order: 7
+nav_order: 5
 ---
 
-## 18.7. Setting up the service persistence
+## 18.5. Setting up the service persistence
 
 The service persistence must be configured before making the initial call to any event-raising method or the connect method of the endpoint. All methods described in this section belong to the <span class="datatype">ServiceEndpoint</span> class. To set SPL-1 (service persistence level 1) with a default capacity of 16 kilobytes, call the following method:
 ```java

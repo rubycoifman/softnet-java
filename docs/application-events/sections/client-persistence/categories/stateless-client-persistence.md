@@ -1,11 +1,12 @@
 ---
 layout: default
-title: 18.6. Persistence levels of stateless clients
-parent: 18. Application Events
-nav_order: 6
+title: 18.4.2. Stateless Client Persistence
+parent: 18.4. Client Persistence
+grand_parent: 18. Application Events
+nav_order: 2
 ---
 
-## 18.6. Persistence levels of stateless clients
+## 18.4.2. Stateless Client Persistence
 
 A stateless client is a guest client without an account on the site. Therefore, the site does not save the client's state when the connection to the client is lost. When a stateless client connects to the site, it provides information about each event subscription and the ID of the last event received under that subscription, if any. The broker creates a client agent and initializes it using the information provided. From this point on, the agent works in the same way as the agent of a stateful client as described in the previous section. That is, the agent checks each authorized subscription for the next event in the queue after the last one delivered. If such an event exists, it sends it and waits for an acknowledgment. The agent sends the next event only after receiving an acknowledgment for the last event sent. The agent repeats the event message if an acknowledgement was not received within the timeout.  
 

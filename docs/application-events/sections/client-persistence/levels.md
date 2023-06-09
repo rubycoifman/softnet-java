@@ -2,6 +2,7 @@
 layout: default
 title: 18.4. Client Persistence
 parent: 18. Application Events
+has_children: true
 nav_order: 4
 ---
 

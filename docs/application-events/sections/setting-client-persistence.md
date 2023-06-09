@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 18.8. Setting up the client persistence
+title: 18.6. Setting up the client persistence
 parent: 18. Application Events
-nav_order: 8
+nav_order: 6
 ---
 
-## 18.8. Setting up the client persistence
+## 18.6. Setting up the client persistence
 
 Unlike in the case with services, the client persistence is set to level 1 by default. If you want to set it to the layer 2 (CPL-2), you must do so before the initial call to the endpoint's <span class="method">connect</span> method. The <span class="datatype">ClientEndpoint</span> class has a method <span class="method">setPersistenceL2</span> to set CPL-2:
 ```java

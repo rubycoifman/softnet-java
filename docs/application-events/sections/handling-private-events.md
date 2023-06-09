@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 18.14. Handling Private events
+title: 18.12. Handling Private events
 parent: 18. Application Events
-nav_order: 14
+nav_order: 12
 ---
 
-## 18.14. Handling Private events
+## 18.12. Handling Private events
 
 Handling Private events is almost identical to handling Replacing or Queueing events. In this description, most things are repeated, and the differences are noted.  
 
