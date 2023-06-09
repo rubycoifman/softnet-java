@@ -6,7 +6,7 @@ nav_order: 9
 
 ## 9. Client Endpoint
 
-There are four categories of client endpoints. Two of them are multi-service and single-service endpoints, and, accordingly, two classes that implement them – <span class="datatype">ClientEndpoint</span> and <span class="datatype">ClientSEndpoint</span> derived from the first. Another two categories are multi-service and single-service endpoints for stateless guest clients. These categories are implemented by the same classes – <span class="datatype">ClientEndpoint</span> and <span class="datatype">ClientSEndpoint</span>, but have restricted capabilities – they unable to receive Private events. Also, they differ in the quality of receiving events. See [section 18.6]({{ site.baseurl }}{% link docs/application-events/sections/persistence-levels-of-stateless-clients.md %}) for details.  
+There are four categories of client endpoints. Two of them are multi-service and single-service endpoints, and, accordingly, two classes that implement them – <span class="datatype">ClientEndpoint</span> and <span class="datatype">ClientSEndpoint</span> derived from the first. Another two categories are multi-service and single-service endpoints for stateless guest clients. These categories are implemented by the same classes – <span class="datatype">ClientEndpoint</span> and <span class="datatype">ClientSEndpoint</span>, but have restricted capabilities – they unable to receive Private events. Also, they differ in the quality of receiving events. See [section 18.6]({{ site.baseurl }}{% link docs/application-events/sections/stateless-client-persistence.md %}) for details.  
 
 You know that each client connects to the site using a URI. Softnet defines 4 client URI formats, one for each category of clients. These formats differ only in URI schemes:  
 
@@ -87,5 +87,5 @@ public interface RemoteService
 	boolean isRemoved();
 }
 ```
-It has a method <span class="method">getVersion</span> that returns the same version string provided by the service. When the service gets online, Softnet notifies the client about it by raising an event with the <span class="datatype">RemoteService</span> object as an argument. For more information on this, see chapter "[13. Platform events related to clients]({{ site.baseurl }}{% link docs/client-platform-events/platform-events-related-to-clients.md %})". Before making a request to the service, the client can get the version string by calling <span class="method">getVersion</span>, parse it into the components, and check for version compatibility.
+It has a method <span class="method">getVersion</span> that returns the same version string provided by the service. When the service gets online, Softnet notifies the client about it by raising an event with the <span class="datatype">RemoteService</span> object as an argument. For more information on this, see chapter "[13. Platform events related to clients]({{ site.baseurl }}{% link docs/client-platform-events/intro.md %})". Before making a request to the service, the client can get the version string by calling <span class="method">getVersion</span>, parse it into the components, and check for version compatibility.
 

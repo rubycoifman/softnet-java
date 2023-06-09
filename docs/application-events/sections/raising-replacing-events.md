@@ -13,7 +13,7 @@ Replacing events are convenient for representing changes in the parameters of an
 
 It is possible that a Replacing event is used to notify clients when a given state parameter takes values outside the range of nominal values. Then the question arises, if the parameter has returned to normal, how to notify clients about it. That is, how to notify clients about absence of the event. For this purpose, Softnet introduced a Replacing null-event which has the same name as the event and replaces it in the queue. Upon receiving a null-event, subscribed clients know that the event itself is no longer relevant, i.e., the value of the state parameter is now in the nominal range, no matter what that value is.  
 
-Let’s remember that a Replacing event must first be defined in the site structure. See [section 7.4]({{ site.baseurl }}{% link docs/site-and-structure/sections/defining-application-events.md %}) for details. The <span class="datatype">SiteStructure</span> implementation has the following method for this:
+Let’s remember that a Replacing event must first be defined in the site structure. See [section 7.4]({{ site.baseurl }}{% link docs/site/sections/application-events.md %}) for details. The <span class="datatype">SiteStructure</span> implementation has the following method for this:
 ```java
 void addReplacingEvent(String eventName)
 ```

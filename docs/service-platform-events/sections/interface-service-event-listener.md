@@ -41,5 +41,5 @@ The following 5 methods intercept the User Membership events that can be trigger
 
 The <span class="method">onHostnameChanged</span> event handler is invoked when the service hostname is changed by the owner on the site management panel.  
 
-And the last handler, <span class="method">onPersistenceFailed</span>, intercepts error notifications raised by the service persistence component. The detailed guidance on service persistence is given in chapter "[18. Application Events]({{ site.baseurl }}{% link docs/application-events/application-events.md %})".
+And the last handler, <span class="method">onPersistenceFailed</span>, intercepts error notifications raised by the service persistence component. The detailed guidance on service persistence is given in chapter "[18. Application Events]({{ site.baseurl }}{% link docs/application-events/intro.md %})".
 

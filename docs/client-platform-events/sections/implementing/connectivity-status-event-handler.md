@@ -83,7 +83,7 @@ The endpoint raises a connectivity event so that the application could get a new
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="field">status</span>: <span class="datatype">ConnectivityStatus</span>.Connected;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="field">error</span>: <span class="datatype">SoftnetError</span>.NoError;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="field">message</span>: null.  
-The endpoint raises a connectivity event. As the connectivity status is Connected, the endpoint starts establishing the client status. This process is described in the [next section]({{ site.baseurl }}{% link docs/client-platform-events/sections/implementing_event_handlers/client-status-event-handler.md %});
+The endpoint raises a connectivity event. As the connectivity status is Connected, the endpoint starts establishing the client status. This process is described in the [next section]({{ site.baseurl }}{% link docs/client-platform-events/sections/implementing/client-status-event-handler.md %});
 2.	This step is true for stateful clients. The endpoint establishes a connection with the Tracker but fails to perform authentication. The endpoint completes operating with a fatal error. The connectivity parameters take the following values:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="field">status</span>: <span class="datatype">ConnectivityStatus</span>.Down;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="field">error</span>: <span class="datatype">SoftnetError</span>.PasswordNotMatched;  

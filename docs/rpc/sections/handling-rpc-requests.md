@@ -35,7 +35,7 @@ public void registerProcedure(
     String roles)
 ```
 
-See [chapter 15]({{ site.baseurl }}{% link docs/access-rules-definition-technique.md %}) for the technique of defining access rules. Now let’s consider the first three parameters of the method:
+See [chapter 15]({{ site.baseurl }}{% link docs/access-rules.md %}) for the technique of defining access rules. Now let’s consider the first three parameters of the method:
 *	<span class="param">procedureName</span> is the name of the procedure that clients specify when making requests;
 *	<span class="param">requestHandler</span> is an instance of the <span class="datatype">RPCRequestHandler</span> interface implementation. The interface is described below;
 *	<span class="param">concurrencyLimit</span> determines how many request handler instances can run concurrently. By choosing the appropriate value for this parameter, you can control the consumption of the host resources.  

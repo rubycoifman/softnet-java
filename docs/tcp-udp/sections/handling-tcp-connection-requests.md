@@ -27,7 +27,7 @@ void tcpListen(int virtualPort, TCPOptions tcpOptions, int backlog, String roles
 ```
 Again, the first three parameters are the same as of the first method. The role names in the '<span class="param">roles</span>' parameter must be delimited with a semicolon. This overloaded method is only applicable if your application employs RBAC.  
 
-More details on defining access rules declaratively you can find in chapter '[15. Access rules definition technique]({{ site.baseurl }}{% link docs/access-rules-definition-technique.md %}). Now let’s consider the first three parameters of <span class="method">tcpListen</span>:
+More details on defining access rules declaratively you can find in chapter '[15. Access rules definition technique]({{ site.baseurl }}{% link docs/access-rules.md %}). Now let’s consider the first three parameters of <span class="method">tcpListen</span>:
 *	<span class="param">virtualPort</span> is a virtual port on which the service accepts requests. It is not associated with a physical port which is not used at all. The possible values are not restricted;
 *	<span class="param">tcpOptions</span> is an object of the following type:
 ```java

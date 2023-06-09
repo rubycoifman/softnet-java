@@ -11,7 +11,7 @@ IoT applications often employ some kind of inter-device eventing model. Softnet 
 
 **Replacing Events** are convenient for representing changes in the parameters of electro-mechanical objects over time. For example, such parameters can be the readings of temperature, humidity, pressure, etc. The service can raise a Replacing event whenever the corresponding parameter reaches a certain value or changes by a certain delta. Each time an event is received by the broker, the previous instance is replaced with a new one. Thus, at any given time, a subscribed client can only receive the latest event.  
 
-To define a Replacing event, <span class="datatype">SiteStructure</span> has three overloads of the addReplacingEvent method. They differ in the way of defining access rules. See chapter "[15. Access rules definition technique]({{ site.baseurl }}{% link docs/access-rules-definition-technique.md %})" for details. It is important to note that despite access restrictions, any client can subscribe to any Replacing (or Queueing) event, but only an authorized client can receive it.  
+To define a Replacing event, <span class="datatype">SiteStructure</span> has three overloads of the addReplacingEvent method. They differ in the way of defining access rules. See chapter "[15. Access rules definition technique]({{ site.baseurl }}{% link docs/access-rules.md %})" for details. It is important to note that despite access restrictions, any client can subscribe to any Replacing (or Queueing) event, but only an authorized client can receive it.  
 
 The first overload of <span class="method">addReplacingEvent</span> implies no access restrictions, that is, any client can receive the subscribed event. It has the following signature:
 ```java
@@ -19,7 +19,7 @@ void addReplacingEvent(String eventName)
 ```
 The name length must be in the range [1, 256].  
 
-For the other two overloads of the method, see "[chapter 15]({{ site.baseurl }}{% link docs/access-rules-definition-technique.md %})". The following three examples show three different ways of defining access rules:  
+For the other two overloads of the method, see "[chapter 15]({{ site.baseurl }}{% link docs/access-rules.md %})". The following three examples show three different ways of defining access rules:  
 
 1) Definition of some Replacing event named "Current Temperature" with no access restrictions:
 ```java
@@ -46,7 +46,7 @@ void addQueueingEvent(String eventName, int lifetime, int maxQueueSize)
 ```
 The first parameter takes the event name. The second parameter takes the event lifetime in seconds. The third parameter takes the maximum queue size.  
 Parameters have the following restrictions: name length: [1, 256]; lifetime: [1 minute, 30 days]; maximum queue size: [1, 1000].  
-The other two overloads of the method have the fifth parameter, which is either a list of authorized roles or a guest denying level. For details, see [chapter 15]({{ site.baseurl }}{% link docs/access-rules-definition-technique.md %}).  
+The other two overloads of the method have the fifth parameter, which is either a list of authorized roles or a guest denying level. For details, see [chapter 15]({{ site.baseurl }}{% link docs/access-rules.md %}).  
 
 The example below defines a Queueing event with the following parameters: name: "CriticalPressure"; lifetime: 2 hours and 30 minutes; max queue size: 50. All users authorized.
 ```java
