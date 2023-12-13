@@ -16,7 +16,7 @@ public class TimeSpan {
 	public static int fromHours(int hours) {
 		return  hours * 3600;
 	}
-	public static int fromDays(int days) {
+	public static int fromDaysAndNights(int days) {
 		return  days * 86400;
 	}
 }
